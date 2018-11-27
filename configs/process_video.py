@@ -236,7 +236,7 @@ def process_video_kwiver( input_name, options, is_image_list=False, base_ovrd=''
   if gpu is None:
     gpu = 0
 
-  log_info( 'Processing: {} on GPU {}... '.format(os.path.basename(input_name), gpu) )
+  log_info( 'Processing: {} on CPU... '.format(os.path.basename(input_name)) )
 
   # Get video name without extension and full path
   if len( base_ovrd ) > 0:
